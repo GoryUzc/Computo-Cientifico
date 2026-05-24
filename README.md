@@ -46,6 +46,10 @@ cmake --build . --config Release
 - **Calculating SVD and PCA in C++** — DemoFox Blog (2022). https://blog.demofox.org/2022/07/12/calculating-svd-and-pca-in-c/
 - **stb Libraries** — https://github.com/nothings/stb (stb_image, stb_image_write)
 
+## Informes Tecnicos 
+
+- **Consulta** - https://goryuzc.github.io/Computo-Cientifico/
+
 ## Licencia
 
 Uso académico. Libre para fines educativos.
