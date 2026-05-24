@@ -1,5 +1,4 @@
-
-\documentclass[12pt,a4paper]{article}
+﻿\documentclass[12pt,a4paper]{article}
 
 % ============ PAQUETES ESENCIALES ============
 \usepackage[utf8]{inputenc}
@@ -272,7 +271,7 @@ Eigen::MatrixXd reconstruirRangoK(const ResultadoSVD& res, int k) {
 
 \subsection{Resumen de M\'{e}tricas}
 
-El cuadro ~\ref{tab:resumen} presenta el consolidado de m\'{e}tricas para todas las im\'{a}genes y valores de $k$ evaluados. El rango completo $r$ coincide con la dimensi\'{o}n menor de cada imagen.
+El cuadro~\ref{tab:resumen} presenta el consolidado de m\'{e}tricas para todas las im\'{a}genes y valores de $k$ evaluados. El rango completo $r$ coincide con la dimensi\'{o}n menor de cada imagen.
 
 \begin{landscape}
 \begin{table}[H]
@@ -309,102 +308,102 @@ Las Figuras muestran los paneles combinados (error, energ\'{i}a y tasa de compre
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{resultados/graficos/panel_combinado_1.png}
+\includegraphics[width=0.95\textwidth]{../resultados/graficos/panel_combinado_1.png}
 \caption{Panel combinado --- Lena escala de grises (ID 3). Se observa decaimiento exponencial del error y saturaci\'{o}n r\'{a}pida de la energ\'{i}a.}
-\label{fig:panel3}
+\label{fig:panel1}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{resultados/graficos/panel_combinado_2.png}
+\includegraphics[width=0.95\textwidth]{../resultados/graficos/panel_combinado_2.png}
 \caption{Panel combinado --- Geometr\'{i}a escala de grises (ID 2). La alta variabilidad espectral se refleja en una ca\'{i}da m\'{a}s lenta del error.}
 \label{fig:panel2}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{resultados/graficos/panel_combinado_3.png}
+\includegraphics[width=0.95\textwidth]{../resultados/graficos/panel_combinado_3.png}
+\caption{Panel combinado --- Pimiento RGB (ID 8). Excelente compresibilidad: $k=20$ alcanza $>$99.9\% de energ\'{i}a.}
+\label{fig:panel3}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{../resultados/graficos/panel_combinado_4.png}
+\caption{Panel combinado --- Mandril RGB (ID 7). Comportamiento intermedio con convergencia estable.}
+\label{fig:panel4}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{../resultados/graficos/panel_combinado_5.png}
+\caption{Panel combinado --- Edificio RGB (ID 5). La imagen muestra una ca\'{i}da gradual del error y un crecimiento r\'{a}pido de la energ\'{i}a capturada.}
+\label{fig:panel5}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{../resultados/graficos/panel_combinado_6.png}
+\caption{Panel combinado --- Lena RGB (ID 6). Alta compresibilidad con saturaci\'{o}n temprana de la energ\'{i}a y bajo error relativo a partir de $k=50$.}
+\label{fig:panel6}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{../resultados/graficos/panel_combinado_7.png}
+\caption{Panel combinado --- Mandril RGB (ID 7). Comportamiento intermedio con convergencia estable y saturaci\'{o}n moderada de la energ\'{i}a.}
+\label{fig:panel7}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\textwidth]{../resultados/graficos/panel_combinado_8.png}
 \caption{Panel combinado --- Pimiento RGB (ID 8). Excelente compresibilidad: $k=20$ alcanza $>$99.9\% de energ\'{i}a.}
 \label{fig:panel8}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{resultados/graficos/panel_combinado_4.png}
-\caption{Panel combinado --- Mandril RGB (ID 7). Comportamiento intermedio con convergencia estable.}
-\label{fig:panel7}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{resultados/graficos/panel_combinado_5.png}
-\caption{Panel combinado --- Mandril RGB (ID 7). Comportamiento intermedio con convergencia estable.}
-\label{fig:panel7}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{resultados/graficos/panel_combinado_6.png}
-\caption{Panel combinado --- Mandril RGB (ID 7). Comportamiento intermedio con convergencia estable.}
-\label{fig:panel7}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{resultados/graficos/panel_combinado_7.png}
-\caption{Panel combinado --- Mandril RGB (ID 7). Comportamiento intermedio con convergencia estable.}
-\label{fig:panel7}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.95\textwidth]{resultados/graficos/panel_combinado_8.png}
-\caption{Panel combinado --- Mandril RGB (ID 7). Comportamiento intermedio con convergencia estable.}
-\label{fig:panel7}
 \end{figure}
 
 % ---------- 4.5 RESULTADOS VISUALES (IMAGENES RECONSTRUIDAS) ----------
 \subsection{Resultados Visuales: Im\'{a}genes Reconstruidas}\label{sec:visuales}
 
-A continuaci\'{o}n se presentan comparaciones visuales entre la imagen original y las reconstrucciones $A_k$ para distintos valores de $k$. Las im\'{a}genes se ubican en \texttt{resultados/reconstrucciones/}.
-
+\hbox{A continuaci\'{o}n se presentan comparaciones visuales entre la imagen original y las reconstrucciones $A_k$ para distintos valores de $k$. Las im\'{a}genes se ubican en \texttt{../resultados/reconstrucciones/}.
+}
 \subsubsection{Edificio escala de grises (ID 1)}
 
 \begin{figure}[H]
 \centering
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{assets/grises/edificio_gris_1.png}
+    \includegraphics[width=\textwidth]{../assets/grises/edificio_gris_1.png}
     \caption{Original}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_1_5.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_1_5.png}
     \caption{$k=5$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_1_20.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_1_20.png}
     \caption{$k=20$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_1_50.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_1_50.png}
     \caption{$k=50$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_1_100.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_1_100.png}
     \caption{$k=100$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_1_183.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_1_183.png}
     \caption{$k=183$}
 \end{subfigure}
 \caption{Reconstrucciones de edificio (gris) para $k \in \{5, 20, 50, 100, 183\}$. Con $k=100$ la imagen ya es visualmente indistinguible del original.}
@@ -417,37 +416,37 @@ A continuaci\'{o}n se presentan comparaciones visuales entre la imagen original 
 \centering
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{assets/grises/geometria_gris_2.png}
+    \includegraphics[width=\textwidth]{../assets/grises/geometria_gris_2.png}
     \caption{Original}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_2_5.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_2_5.png}
     \caption{$k=5$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_2_20.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_2_20.png}
     \caption{$k=20$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_2_50.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_2_50.png}
     \caption{$k=50$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_2_100.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_2_100.png}
     \caption{$k=100$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_2_200.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_2_200.png}
     \caption{$k=200$}
 \end{subfigure}
 \caption{Reconstrucciones de geometr\'{i}a (gris) para $k \in \{5, 20, 50, 100, 200\}$. Con $k=200$ la imagen no es exactamente indistinguible del original.}
@@ -460,170 +459,83 @@ A continuaci\'{o}n se presentan comparaciones visuales entre la imagen original 
 \centering
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{assets/grises/lena_gris_3.png}
+    \includegraphics[width=\textwidth]{../assets/grises/lena_gris_3.png}
     \caption{Original}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_3_5.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_3_5.png}
     \caption{$k=5$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_3_20.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_3_20.png}
     \caption{$k=20$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_3_50.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_3_50.png}
     \caption{$k=50$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_3_100.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_3_100.png}
     \caption{$k=100$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_3_200.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_3_200.png}
     \caption{$k=200$}
 \end{subfigure}
 \caption{Reconstrucciones de Lena (gris) para $k \in \{5, 20, 50, 100, 200\}$. Con $k=50$ la imagen ya es visualmente indistinguible del original.}
-\label{fig:lena-reconstrucciones}
-\end{figure}
-
-\subsubsection{Mandril escala de grises (ID 4)}
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{assets/grises/mandril_gris_4.png}
-    \caption{Original}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_4_5.png}
-    \caption{$k=5$}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_4_20.png}
-    \caption{$k=20$}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_4_50.png}
-    \caption{$k=50$}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_4_100.png}
-    \caption{$k=100$}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_4_200.png}
-    \caption{$k=200$}
-\end{subfigure}
-\caption{Reconstrucciones de mandril (gris) para $k \in \{5, 20, 50, 100, 200\}$. Con $k=50$ la imagen ya es visualmente indistinguible del original.}
-\label{fig:mandril-reconstrucciones}
-\end{figure}
-
-\subsubsection{Edificio RGB (ID 5)}
-
-\begin{figure}[H]
-\centering
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{assets/rgb/edificio_rgb_5.png}
-    \caption{Original}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_5_5.png}
-    \caption{$k=5$}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_5_20.png}
-    \caption{$k=20$}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_5_50.png}
-    \caption{$k=50$}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_5_100.png}
-    \caption{$k=100$}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.18\textwidth}
-    \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_5_200.png}
-    \caption{$k=200$}
-\end{subfigure}
-\caption{Reconstrucciones de Edificio (RGB) para $k \in \{5, 20, 50, 100, 200\}$. Con $k=200$ la imagen ya es visualmente indistinguible del original.}
-\label{fig:edificio-reconstrucciones}
+\label{fig:lena-gris-reconstrucciones}
 \end{figure}
 
 \subsubsection{Lena RGB (ID 6)}
-
 \begin{figure}[H]
 \centering
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{assets/rgb/lena_rgb_6.png}
+    \includegraphics[width=\textwidth]{../assets/rgb/lena_rgb_6.png}
     \caption{Original}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_6_5.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_6_5.png}
     \caption{$k=5$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_6_20.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_6_20.png}
     \caption{$k=20$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_6_50.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_6_50.png}
     \caption{$k=50$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_6_100.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_6_100.png}
     \caption{$k=100$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_6_200.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_6_200.png}
     \caption{$k=200$}
 \end{subfigure}
 \caption{Reconstrucciones de Lena (RGB) para $k \in \{5, 20, 50, 100, 200\}$. Con $k=100$ la imagen ya es visualmente indistinguible del original.}
-\label{fig:lena-reconstrucciones}
+\label{fig:lena-rgb-reconstrucciones}
 \end{figure}
 
 \subsubsection{Mandril RGB (ID 7)}
@@ -632,41 +544,41 @@ A continuaci\'{o}n se presentan comparaciones visuales entre la imagen original 
 \centering
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{assets/rgb/mandril_rgb_7.png}
+    \includegraphics[width=\textwidth]{../assets/rgb/mandril_rgb_7.png}
     \caption{Original}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_7_5.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_7_5.png}
     \caption{$k=5$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_7_20.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_7_20.png}
     \caption{$k=20$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_7_50.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_7_50.png}
     \caption{$k=50$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_7_100.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_7_100.png}
     \caption{$k=100$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_7_200.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_7_200.png}
     \caption{$k=200$}
 \end{subfigure}
 \caption{Reconstrucciones de Mandril (RGB) para $k \in \{5, 20, 50, 100, 200\}$. Con $k=50$ la imagen ya es visualmente indistinguible del original.}
-\label{fig:mandril-reconstrucciones}
+\label{fig:mandril-rgb-reconstrucciones}
 \end{figure}
 
 \subsubsection{Pimiento RGB (ID 8)}
@@ -675,41 +587,41 @@ A continuaci\'{o}n se presentan comparaciones visuales entre la imagen original 
 \centering
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{assets/rgb/pimiento_rgb_8.png}
+    \includegraphics[width=\textwidth]{../assets/rgb/pimiento_rgb_8.png}
     \caption{Original}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_8_5.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_8_5.png}
     \caption{$k=5$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_8_20.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_8_20.png}
     \caption{$k=20$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_8_50.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_8_50.png}
     \caption{$k=50$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_8_100.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_8_100.png}
     \caption{$k=100$}
 \end{subfigure}
 \hfill
 \begin{subfigure}[b]{0.18\textwidth}
     \centering
-    \includegraphics[width=\textwidth]{resultados/reconstrucciones/ak_8_200.png}
+    \includegraphics[width=\textwidth]{../resultados/reconstrucciones/ak_8_200.png}
     \caption{$k=200$}
 \end{subfigure}
 \caption{Reconstrucciones de Pimiento (RGB) para $k \in \{5, 20, 50, 100, 200\}$. Con $k=20$ la imagen ya es visualmente indistinguible del original.}
-\label{fig:pimiento-reconstrucciones}
+\label{fig:pimiento-rgb-reconstrucciones}
 \end{figure}
 
 % ---------- 5. ANALISIS COMPARATIVO ----------
@@ -753,8 +665,9 @@ El test unitario de reconstrucci\'{o}n exacta ($k=r$) arroj\'{o} un error relati
 \bibitem{eigen} Eigen Documentation. \textit{SVD Module.} \url{https://eigen.tuxfamily.org/dox/group__SVD__Module.html}
 \bibitem{golub} Golub, G. H., \& Van Loan, C. F. (2013). \textit{Matrix Computations} (4th ed.). Johns Hopkins University Press.
 \bibitem{demofox} DemoFox Blog. (2022). \textit{Calculating SVD and PCA in C++.} \url{https://blog.demofox.org/2022/07/12/calculating-svd-and-pca-in-c/}
-\bibitem{compton} Compton, A. (2020). \textit{Singular Value Decomposition: Applications to Image Processing.} Lagrange College Undergraduate Research.
+\bibitem{compton} Compton, A. (2020). \textit{Singular Value Decomposition: Applications to Image Processing.} Lagrange University Undergraduate Research.
 \bibitem{stb} stb Libraries. \url{https://github.com/nothings/stb}
 \end{thebibliography}
 
 \end{document}
+    
