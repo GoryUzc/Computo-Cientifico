@@ -1,0 +1,372 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Eigen3__Eigen-Debug-e56907cb0e4c2e2c56eb.json",
+					"name" : "Eigen3::Eigen",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SvdImageCompression",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Debug-6ac1927ffd1295f08950.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Debug-9a1d7a8ce10bd6b744bb.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "svd_compresion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-svd_compresion-Debug-afb140d1352765b42a0a.json",
+					"name" : "svd_compresion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_reconstruccion_exacta::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_reconstruccion_exacta-Debug-e780cba4f380b9dba4d6.json",
+					"name" : "test_reconstruccion_exacta",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Eigen3__Eigen-Release-e56907cb0e4c2e2c56eb.json",
+					"name" : "Eigen3::Eigen",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SvdImageCompression",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-Release-6ac1927ffd1295f08950.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-Release-9a1d7a8ce10bd6b744bb.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "svd_compresion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-svd_compresion-Release-f9faee07f83944325f84.json",
+					"name" : "svd_compresion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_reconstruccion_exacta::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_reconstruccion_exacta-Release-ba0382f14124ec5bb9eb.json",
+					"name" : "test_reconstruccion_exacta",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Eigen3__Eigen-MinSizeRel-e56907cb0e4c2e2c56eb.json",
+					"name" : "Eigen3::Eigen",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-MinSizeRel-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "MinSizeRel",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SvdImageCompression",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-6ac1927ffd1295f08950.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-9a1d7a8ce10bd6b744bb.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "svd_compresion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-svd_compresion-MinSizeRel-48b729cdb3a82d7942b3.json",
+					"name" : "svd_compresion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_reconstruccion_exacta::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_reconstruccion_exacta-MinSizeRel-d58dbf9f9d71fa76c2cc.json",
+					"name" : "test_reconstruccion_exacta",
+					"projectIndex" : 0
+				}
+			]
+		},
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Eigen3__Eigen-RelWithDebInfo-e56907cb0e4c2e2c56eb.json",
+					"name" : "Eigen3::Eigen",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-RelWithDebInfo-f040eec181a89de70dbe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "SvdImageCompression",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-6ac1927ffd1295f08950.json",
+					"name" : "ALL_BUILD",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-9a1d7a8ce10bd6b744bb.json",
+					"name" : "ZERO_CHECK",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "svd_compresion::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-svd_compresion-RelWithDebInfo-08c1eaf7a75aa18a90a3.json",
+					"name" : "svd_compresion",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_reconstruccion_exacta::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_reconstruccion_exacta-RelWithDebInfo-175b1d8ecffd46fbc2f6.json",
+					"name" : "test_reconstruccion_exacta",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/TallerI_ComprecionImagenesSVD/build",
+		"source" : "C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/TallerI_ComprecionImagenesSVD"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	}
+}

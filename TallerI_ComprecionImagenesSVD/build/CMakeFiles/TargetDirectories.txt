@@ -1,0 +1,4 @@
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/TallerI_ComprecionImagenesSVD/build/CMakeFiles/svd_compresion.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/TallerI_ComprecionImagenesSVD/build/CMakeFiles/test_reconstruccion_exacta.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/TallerI_ComprecionImagenesSVD/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/TallerI_ComprecionImagenesSVD/build/CMakeFiles/ZERO_CHECK.dir

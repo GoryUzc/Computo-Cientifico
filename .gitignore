@@ -1,0 +1,38 @@
+# Build
+/build/
+/out/
+/CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.sln
+*.vcxproj
+*.vcxproj.filters
+x64/
+Release/
+Debug/
+*.exe
+*.dll
+*.lib
+*.obj
+*.pdb
+
+
+# LaTeX intermedios
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fls
+*.fdb_latexmk
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
