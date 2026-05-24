@@ -3,76 +3,270 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informe SVD - Compresión de Imágenes</title>
+    <title>Informes PDF — Cómputo Científico</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background: #f5f5f5;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
             min-height: 100vh;
         }
+        .header {
+            background: rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            padding: 25px 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .header h1 {
+            font-size: 1.8rem;
+            color: #fff;
+            font-weight: 600;
+        }
+        .header p {
+            color: #8892b0;
+            margin-top: 5px;
+            font-size: 0.95rem;
+        }
         .container {
-            max-width: 900px;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 30px 40px;
+        }
+        .selector-section {
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .selector-section label {
+            display: block;
+            font-size: 0.9rem;
+            color: #8892b0;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .pdf-select {
             width: 100%;
-            padding: 40px 20px;
-            text-align: center;
+            padding: 14px 18px;
+            font-size: 1rem;
+            background: rgba(0,0,0,0.3);
+            border: 2px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%238892b0' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 18px center;
+            padding-right: 45px;
         }
-        h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
+        .pdf-select:hover {
+            border-color: #64ffda;
         }
-        .subtitle {
-            color: #7f8c8d;
-            margin-bottom: 30px;
+        .pdf-select:focus {
+            outline: none;
+            border-color: #64ffda;
+            box-shadow: 0 0 0 3px rgba(100,255,218,0.1);
+        }
+        .pdf-select option {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 10px;
+        }
+        .viewer-section {
+            background: rgba(255,255,255,0.03);
+            border-radius: 16px;
+            padding: 25px 30px;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .viewer-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .viewer-title {
+            font-size: 1.2rem;
+            color: #fff;
+            font-weight: 500;
+        }
+        .btn-group {
+            display: flex;
+            gap: 12px;
+        }
+        .btn {
+            padding: 10px 22px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border: none;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #64ffda 0%, #00a8e8 100%);
+            color: #0a192f;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(100,255,218,0.3);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.08);
+            color: #ccd6f6;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: #64ffda;
         }
         .pdf-frame {
             width: 100%;
-            height: 800px;
+            height: 750px;
             border: none;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            border-radius: 8px;
-            background: white;
+            border-radius: 12px;
+            background: #fff;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
         }
-        .download-btn {
-            display: inline-block;
+        .empty-state {
+            text-align: center;
+            padding: 80px 20px;
+            color: #8892b0;
+        }
+        .empty-state svg {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+        .empty-state h3 {
+            color: #ccd6f6;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #8892b0;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255,255,255,0.05);
             margin-top: 20px;
-            padding: 12px 30px;
-            background: #2980b9;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background 0.3s;
         }
-        .download-btn:hover {
-            background: #1a5276;
-        }
-        .fallback {
-            margin-top: 20px;
-            padding: 20px;
-            background: #fff3cd;
-            border-radius: 6px;
-            color: #856404;
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .pdf-frame {
+                height: 500px;
+            }
+            .viewer-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
+<base target="_blank">
 </head>
 <body>
-    <div class="container">
-        <h1>📊 Compresión de Imágenes mediante SVD</h1>
-        <p class="subtitle">Informe Técnico — Cómputo Científico</p>
-        
-        <iframe class="pdf-frame" src="informe_svd.pdf" type="application/pdf">
-            <p class="fallback">
-                Tu navegador no soporta PDF embebido. 
-                <a href="informe_svd.pdf" class="download-btn">📥 Descargar PDF</a>
-            </p>
-        </iframe>
-        
-        <a href="informe_svd.pdf" class="download-btn" download>📥 Descargar PDF</a>
+    <div class="header">
+        <h1>📚 Informes Técnicos — Cómputo Científico</h1>
+        <p>Visualizador de documentos PDF del curso</p>
     </div>
+
+    <div class="container">
+        <!-- Selector de PDF -->
+        <div class="selector-section">
+            <label>📑 Seleccionar informe</label>
+            <select class="pdf-select" id="pdfSelector" onchange="cambiarPDF()">
+                <option value="" disabled selected>Elige un PDF para visualizar...</option>
+                <option value="informe_svd.pdf">2.1 — Compresión de Imágenes mediante SVD</option>
+                <!-- Agrega más PDFs aquí -->
+                <!-- <option value="otro_informe.pdf">1.1 — Autómatas Celulares 1D</option> -->
+                <!-- <option value="otro_mas.pdf">1.2 — Medidas Cuantitativas</option> -->
+            </select>
+        </div>
+
+        <!-- Visor de PDF -->
+        <div class="viewer-section">
+            <div class="viewer-header">
+                <span class="viewer-title" id="tituloPDF">Ningún documento seleccionado</span>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary" id="btnDescargar" download style="display:none;">
+                        ⬇️ Descargar
+                    </a>
+                    <a href="#" class="btn btn-secondary" id="btnNuevaPestana" target="_blank" style="display:none;">
+                        ↗️ Abrir en nueva pestaña
+                    </a>
+                </div>
+            </div>
+
+            <div id="emptyState" class="empty-state">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                    <line x1="16" y1="13" x2="8" y2="13"/>
+                    <line x1="16" y1="17" x2="8" y2="17"/>
+                    <polyline points="10 9 9 9 8 9"/>
+                </svg>
+                <h3>Selecciona un PDF</h3>
+                <p>Elige un informe del menú desplegable para visualizarlo aquí</p>
+            </div>
+
+            <iframe 
+                id="pdfViewer" 
+                class="pdf-frame" 
+                style="display:none;"
+                type="application/pdf">
+            </iframe>
+        </div>
+    </div>
+
+    <div class="footer">
+        Repositorio académico — Cómputo Científico | Generado con LaTeX + MiKTeX
+    </div>
+
+    <script>
+        function cambiarPDF() {
+            const selector = document.getElementById('pdfSelector');
+            const pdfUrl = selector.value;
+            const nombre = selector.options[selector.selectedIndex].text;
+
+            if (!pdfUrl) return;
+
+            // Actualizar título
+            document.getElementById('tituloPDF').textContent = nombre;
+
+            // Ocultar empty state, mostrar visor
+            document.getElementById('emptyState').style.display = 'none';
+            document.getElementById('pdfViewer').style.display = 'block';
+
+            // Cargar PDF en el iframe
+            document.getElementById('pdfViewer').src = pdfUrl;
+
+            // Actualizar botones
+            const btnDescargar = document.getElementById('btnDescargar');
+            const btnNuevaPestana = document.getElementById('btnNuevaPestana');
+
+            btnDescargar.href = pdfUrl;
+            btnDescargar.download = pdfUrl;
+            btnDescargar.style.display = 'inline-flex';
+
+            btnNuevaPestana.href = pdfUrl;
+            btnNuevaPestana.style.display = 'inline-flex';
+        }
+    </script>
 </body>
-</html>
+</html
