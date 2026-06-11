@@ -9,6 +9,7 @@ Cada proyecto es autónomo: posee su propio `CMakeLists.txt`, puede compilarse d
 | # | Carpeta | Tema | Descripción | Estado |
 |---|---------|------|-------------|--------|
 | 1.1 | `TALLERI_COMPRENCIONIMAGENESSVD` | Compresión de Imágenes mediante SVD | Sistema completo de compresión basado en Descomposición en Valores Singulares (SVD). Implementación en C++17 con Eigen (BDCSVD), análisis cuantitativo con Python (matplotlib/numpy) e informe técnico en LaTeX. Incluye procesamiento de imágenes en escala de grises y color RGB. | ✅ Completado |
+| 1.2 | `TALLER2_PCA_AncestreriaGenetica` | Análisis de Componentes Principales (PCA) e Identificación de Ancestría Genética | Implementacion completo en C++17 (Eigen 3.4, fast-cpp-csv-parser) con visualización Python (matplotlib, pandas). Incluye normalización de Patterson, SVD y proyección PC1 vs PC2 para detectar estructura poblacional y admixture. | ✅ Completado |
 
 ## Cómo compilar cualquier proyecto
 
