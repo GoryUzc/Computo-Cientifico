@@ -10,6 +10,7 @@ Cada proyecto es autónomo: posee su propio `CMakeLists.txt`, puede compilarse d
 |---|---------|------|-------------|--------|
 | 1.1 | `TALLERI_COMPRENCIONIMAGENESSVD` | Compresión de Imágenes mediante SVD | Sistema completo de compresión basado en Descomposición en Valores Singulares (SVD). Implementación en C++17 con Eigen (BDCSVD), análisis cuantitativo con Python (matplotlib/numpy) e informe técnico en LaTeX. Incluye procesamiento de imágenes en escala de grises y color RGB. | ✅ Completado |
 | 1.2 | `TALLER2_PCA_AncestreriaGenetica` | Análisis de Componentes Principales (PCA) e Identificación de Ancestría Genética | Implementacion completo en C++17 (Eigen 3.4, fast-cpp-csv-parser) con visualización Python (matplotlib, pandas). Incluye normalización de Patterson, SVD y proyección PC1 vs PC2 para detectar estructura poblacional y admixture. | ✅ Completado |
+| 1.3 | `Taller3_DistribucionCalor2D` | Distribución de Calor 2D - Ecuación de Poisson | Simulación numérica en placa cuadrada mediante diferencias finitas. Incluye solver C++17 (Eigen3, BiCGSTAB), exportación CSV, visualización Python (matplotlib, pandas) y documentación SDD con requisitos y arquitectura modular. | ✅ Completado |
 
 ## Cómo compilar cualquier proyecto
 
@@ -23,6 +24,15 @@ Desde `x64 Native Tools Command Prompt for VS 2022`:
 cd "TALLERI_COMPRENCIONIMAGENESSVD"
 mkdir build && cd build
 cmake .. -G "Visual Studio 17 2022" -DCMAKE_TOOLCHAIN_FILE=C:/Users/User/vcpkg/scripts/buildsystems/vcpkg.cmake
+cmake --build . --config Release
+```
+
+**Taller 3 — Distribución de Calor 2D:**
+
+```bash
+cd "Taller3_DistribucionCalor2D"
+mkdir build && cd build
+cmake .. -G "Visual Studio 17 2022"
 cmake --build . --config Release
 ```
 
