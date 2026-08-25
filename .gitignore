@@ -36,3 +36,6 @@ Debug/
 __pycache__/
 *.pyc
 .venv/
+
+#kilo IA 
+.kilo
