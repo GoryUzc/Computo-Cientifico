@@ -1,0 +1,6 @@
+caso,descripcion,n_paginas,iteraciones,error_final,convergencia,tiempo_segundos,pagerank_max,pagerank_min,suma_pagerank
+1,3x3 con sumidero (columna 3),3,23,8.080007e-09,true,0.000010,0.661041,0.114125,1.000000
+2,4x4 regular,4,1,0.000000e+00,true,0.000002,0.250000,0.250000,1.000000
+3,8x8 complejo,8,451,9.743727e-09,true,0.000319,0.231324,0.027328,1.000000
+4,5x5 con estructura,5,99,9.702807e-09,true,0.000057,0.370572,0.077334,1.000000
+5,3x3 con sumidero (columna 3),3,109,9.551172e-09,true,0.000048,0.486486,0.050000,1.000000

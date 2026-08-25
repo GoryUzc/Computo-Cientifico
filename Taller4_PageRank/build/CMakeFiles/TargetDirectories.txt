@@ -1,0 +1,3 @@
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/Taller4_PageRank/build/CMakeFiles/pagerank.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/Taller4_PageRank/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/Taller4_PageRank/build/CMakeFiles/ZERO_CHECK.dir

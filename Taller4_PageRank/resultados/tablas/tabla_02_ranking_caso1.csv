@@ -1,0 +1,4 @@
+Rank,Página,PageRank,% del Total,Grado Entrada,Grado Salida
+1,2,0.66104100,66.1041%,2,0
+2,1,0.22483400,22.4834%,1,1
+3,0,0.11412500,11.4125%,0,2
