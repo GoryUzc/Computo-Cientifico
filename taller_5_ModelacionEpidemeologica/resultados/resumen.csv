@@ -1,0 +1,5 @@
+metrica,escenario_A,escenario_B
+pico_infectados,1e+07,5e+06
+dia_pico,7e+01,1e+02
+recuperados_finales,3e+07,3e+07
+error_max_conservacion,4.47035e-08,9.68575e-08

@@ -1,0 +1,3 @@
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/taller_5_ModelacionEpidemeologica/build/CMakeFiles/seir_rk4.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/taller_5_ModelacionEpidemeologica/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/taller_5_ModelacionEpidemeologica/build/CMakeFiles/ZERO_CHECK.dir
