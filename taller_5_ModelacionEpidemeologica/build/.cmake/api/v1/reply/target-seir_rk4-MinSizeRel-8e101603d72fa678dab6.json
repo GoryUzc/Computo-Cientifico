@@ -14,8 +14,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_include_directories",
-			"target_link_libraries"
+			"target_link_libraries",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -35,17 +35,29 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 20,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 19,
+				"line" : 20,
 				"parent" : 0
 			}
 		]
 	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df"
+		}
+	],
 	"compileGroups" : 
 	[
 		{
@@ -58,11 +70,11 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 2,
+					"backtrace" : 3,
 					"path" : "C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/taller_5_ModelacionEpidemeologica/src"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"isSystem" : true,
 					"path" : "C:/Users/User/vcpkg/buildtrees/eigen3/src/5.0.1-d487a628b0.clean"
 				}
@@ -72,7 +84,7 @@
 			{
 				"backtraces" : 
 				[
-					3
+					2
 				],
 				"standard" : "17"
 			},
@@ -101,7 +113,11 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "/machine:X86 /INCREMENTAL:NO /subsystem:console",
+				"fragment" : "/machine:X86 /INCREMENTAL:NO",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "/subsystem:console",
 				"role" : "flags"
 			},
 			{
@@ -111,6 +127,13 @@
 		],
 		"language" : "CXX"
 	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df"
+		}
+	],
 	"name" : "seir_rk4",
 	"nameOnDisk" : "seir_rk4.exe",
 	"paths" : 

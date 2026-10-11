@@ -14,6 +14,11 @@
 			}
 		]
 	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
 	"dependencies" : 
 	[
 		{
@@ -26,6 +31,12 @@
 	"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
 	"isGeneratorProvided" : true,
 	"name" : "ALL_BUILD",
+	"orderDependencies" : 
+	[
+		{
+			"id" : "seir_rk4::@6890427a1f51a3e7e1df"
+		}
+	],
 	"paths" : 
 	{
 		"build" : ".",
