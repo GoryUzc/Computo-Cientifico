@@ -7,7 +7,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Eigen3__Eigen-Debug-e95277cb50f791e17fcd.json",
+					"jsonFile" : "target-Eigen3__Eigen-Debug-072fca3c88368e38f843.json",
 					"name" : "Eigen3::Eigen",
 					"projectIndex" : 0
 				}
@@ -47,7 +47,7 @@
 					[
 						0
 					],
-					"name" : "SEIR_RK4",
+					"name" : "Taller6_RBF",
 					"targetIndexes" : 
 					[
 						0,
@@ -61,22 +61,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Debug-b790fa859b806c1bbf90.json",
+					"jsonFile" : "target-ALL_BUILD-Debug-0a68e5f86a1a50bab47b.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-Debug-31f126edb9ba375c8954.json",
+					"jsonFile" : "target-ZERO_CHECK-Debug-a23f49e5e0a7eb5ec094.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "seir_rk4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-seir_rk4-Debug-9b9dc20d7e6c570a599d.json",
-					"name" : "seir_rk4",
+					"id" : "taller6_rbf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-taller6_rbf-Debug-5efec2e49cc6f76a3657.json",
+					"name" : "taller6_rbf",
 					"projectIndex" : 0
 				}
 			]
@@ -87,7 +87,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Eigen3__Eigen-Release-e95277cb50f791e17fcd.json",
+					"jsonFile" : "target-Eigen3__Eigen-Release-072fca3c88368e38f843.json",
 					"name" : "Eigen3::Eigen",
 					"projectIndex" : 0
 				}
@@ -127,7 +127,7 @@
 					[
 						0
 					],
-					"name" : "SEIR_RK4",
+					"name" : "Taller6_RBF",
 					"targetIndexes" : 
 					[
 						0,
@@ -141,22 +141,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-Release-b790fa859b806c1bbf90.json",
+					"jsonFile" : "target-ALL_BUILD-Release-0a68e5f86a1a50bab47b.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-Release-31f126edb9ba375c8954.json",
+					"jsonFile" : "target-ZERO_CHECK-Release-a23f49e5e0a7eb5ec094.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "seir_rk4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-seir_rk4-Release-a0e9da776fd4aca8afd0.json",
-					"name" : "seir_rk4",
+					"id" : "taller6_rbf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-taller6_rbf-Release-f0fc13d6b97f62cc6c02.json",
+					"name" : "taller6_rbf",
 					"projectIndex" : 0
 				}
 			]
@@ -167,7 +167,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Eigen3__Eigen-MinSizeRel-e95277cb50f791e17fcd.json",
+					"jsonFile" : "target-Eigen3__Eigen-MinSizeRel-072fca3c88368e38f843.json",
 					"name" : "Eigen3::Eigen",
 					"projectIndex" : 0
 				}
@@ -207,7 +207,7 @@
 					[
 						0
 					],
-					"name" : "SEIR_RK4",
+					"name" : "Taller6_RBF",
 					"targetIndexes" : 
 					[
 						0,
@@ -221,22 +221,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-MinSizeRel-b790fa859b806c1bbf90.json",
+					"jsonFile" : "target-ALL_BUILD-MinSizeRel-0a68e5f86a1a50bab47b.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-31f126edb9ba375c8954.json",
+					"jsonFile" : "target-ZERO_CHECK-MinSizeRel-a23f49e5e0a7eb5ec094.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "seir_rk4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-seir_rk4-MinSizeRel-8e101603d72fa678dab6.json",
-					"name" : "seir_rk4",
+					"id" : "taller6_rbf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-taller6_rbf-MinSizeRel-d80ff9e0577c4b6a1dc0.json",
+					"name" : "taller6_rbf",
 					"projectIndex" : 0
 				}
 			]
@@ -247,7 +247,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Eigen3::Eigen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Eigen3__Eigen-RelWithDebInfo-e95277cb50f791e17fcd.json",
+					"jsonFile" : "target-Eigen3__Eigen-RelWithDebInfo-072fca3c88368e38f843.json",
 					"name" : "Eigen3::Eigen",
 					"projectIndex" : 0
 				}
@@ -287,7 +287,7 @@
 					[
 						0
 					],
-					"name" : "SEIR_RK4",
+					"name" : "Taller6_RBF",
 					"targetIndexes" : 
 					[
 						0,
@@ -301,22 +301,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ALL_BUILD::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-b790fa859b806c1bbf90.json",
+					"jsonFile" : "target-ALL_BUILD-RelWithDebInfo-0a68e5f86a1a50bab47b.json",
 					"name" : "ALL_BUILD",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-31f126edb9ba375c8954.json",
+					"jsonFile" : "target-ZERO_CHECK-RelWithDebInfo-a23f49e5e0a7eb5ec094.json",
 					"name" : "ZERO_CHECK",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "seir_rk4::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-seir_rk4-RelWithDebInfo-030b5b3b3cc993494b7c.json",
-					"name" : "seir_rk4",
+					"id" : "taller6_rbf::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-taller6_rbf-RelWithDebInfo-630f82afc5d8d9272e15.json",
+					"name" : "taller6_rbf",
 					"projectIndex" : 0
 				}
 			]
@@ -325,8 +325,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/taller_5_ModelacionEpidemeologica/build",
-		"source" : "C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/taller_5_ModelacionEpidemeologica"
+		"build" : "C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/Taller6_RedesBaseRadial/build",
+		"source" : "C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/Taller6_RedesBaseRadial"
 	},
 	"version" : 
 	{

@@ -9,80 +9,28 @@ Cada proyecto es autónomo: posee su propio `CMakeLists.txt`, puede compilarse d
 | # | Carpeta | Tema | Descripción | Estado |
 |---|---------|------|-------------|--------|
 | 1 | `TALLERI_COMPRENCIONIMAGENESSVD` | Compresión de Imágenes mediante SVD | Sistema completo de compresión basado en Descomposición en Valores Singulares (SVD). Implementación en C++17 con Eigen (BDCSVD), análisis cuantitativo con Python (matplotlib/numpy) e informe técnico en LaTeX. Incluye procesamiento de imágenes en escala de grises y color RGB. | ✅ Completado |
-| 2 | `TALLER2_PCA_AncestreriaGenetica` | Análisis de Componentes Principales (PCA) e Identificación de Ancestría Genética | Implementacion completo en C++17 (Eigen 3.4, fast-cpp-csv-parser) con visualización Python (matplotlib, pandas). Incluye normalización de Patterson, SVD y proyección PC1 vs PC2 para detectar estructura poblacional y admixture. | ✅ Completado |
+| 2 | `TALLER2_PCA_AncestreriaGenetica` | Análisis de Componentes Principales (PCA) e Identificación de Ancestría Genética | Implementación completa en C++17 (Eigen 3.4, fast-cpp-csv-parser) con visualización Python (matplotlib, pandas). Incluye normalización de Patterson, SVD y proyección PC1 vs PC2 para detectar estructura poblacional y admixture. | ✅ Completado |
 | 3 | `Taller3_DistribucionCalor2D` | Distribución de Calor 2D - Ecuación de Poisson | Simulación numérica en placa cuadrada mediante diferencias finitas. Incluye solver C++17 (Eigen3, BiCGSTAB), exportación CSV, visualización Python (matplotlib, pandas) y documentación SDD con requisitos y arquitectura modular. | ✅ Completado |
 | 4 | `Taller4_PageRank` | PageRank - Método de las Potencias | Implementación del algoritmo PageRank mediante el método de potencias en C++17 con Eigen. Incluye 5 casos de prueba con matrices de transición hardcodeadas, construcción de la matriz de Google G = d·M + (1-d)/n·J, y visualización en Python (pandas, matplotlib, tabulate) generando tablas CSV/LaTeX y gráficos PNG. | ✅ Completado |
 | 5 | `taller_5_ModelacionEpidemeologica` | Modelación Epidemiológica - Simulación con EDOs | Implementación en **C++17** del modelo SIR+Epidemiológico con resolución numérica en tiempo real. Incluye visualización Python (matplotlib, pandas) con métricas clave de propagación de enfermedades. | ✅ Completado |
+| 6 | `Taller6_RedesBaseRadial` | Interpolación mediante Redes de Base Radial (RBF) | Interpolador RBF Gaussiano en C++17 con Eigen3. Genera datos con ruido, aplica regularización de Tikhonov y compara la aproximación para distintos parámetros ε. Incluye exportación CSV y visualización en Python. | ✅ Completado |
 
 ## Cómo compilar cualquier proyecto
 
-Todos los proyectos siguen la misma estructura de compilación con CMake y vcpkg.
+Cada proyecto se compila de forma independiente con CMake 3.16 o superior y requiere Eigen3. Instala Eigen3 mediante vcpkg o con el gestor de paquetes de tu sistema antes de configurar el proyecto.
 
-### En Windows con Visual Studio 2022
-
-Desde `x64 Native Tools Command Prompt for VS 2022`:
+En Bash, configura `VCPKG_ROOT` con la ruta a tu instalación de vcpkg y sustituye `Taller6_RedesBaseRadial` por la carpeta del proyecto que quieras compilar:
 
 ```bash
-cd "TALLERI_COMPRENCIONIMAGENESSVD"
-mkdir build && cd build
-cmake .. -G "Visual Studio 17 2022" -DCMAKE_TOOLCHAIN_FILE=C:/Users/User/vcpkg/scripts/buildsystems/vcpkg.cmake
-cmake --build . --config Release
+export VCPKG_ROOT="/c/vcpkg"
+cmake -S Taller6_RedesBaseRadial -B Taller6_RedesBaseRadial/build \
+  -DCMAKE_TOOLCHAIN_FILE="$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake"
+cmake --build Taller6_RedesBaseRadial/build --config Release
 ```
 
-**Taller 3 — Distribución de Calor 2D:**
+Si Eigen3 ya está instalado y disponible para CMake, puedes omitir `-DCMAKE_TOOLCHAIN_FILE=...`.
 
-```bash
-cd "Taller3_DistribucionCalor2D"
-mkdir build && cd build
-cmake .. -G "Visual Studio 17 2022"
-cmake --build . --config Release
-```
-
-**Taller 4 — PageRank:**
-
-```bash
-cd "Taller4_PageRank"
-mkdir build && cd build
-cmake .. -G "Visual Studio 17 2022" -A x64 -DCMAKE_TOOLCHAIN_FILE="C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
-cmake --build . --config Release
-```
-
-**Taller 5 — Modelación Epidemiológica:**
-
-```bash
-cd "taller_5_ModelacionEpidemeologica"
-mkdir build && cd build
-cmake .. -G "Visual Studio 17 2022" -A x64 -DCMAKE_TOOLCHAIN_FILE="C:/vcpkg/scripts/buildsystems/vcpkg.cmake"
-cmake --build . --config Release
-```
-
-### Con la extensión CMake Tools de VS Code
-
-- Abre la carpeta del proyecto.
-- Presiona `F7` para compilar.
-- Presiona `Shift+F5` para ejecutar.
-
-## Recursos
-
-### Álgebra Lineal Computacional
-- **Matrix Computations** — Golub, G. H. & Van Loan, C. F. (2013). 4th ed. Johns Hopkins. Cap. 2: SVD y Teorema de Eckart-Young-Mirsky.
-- **Eigen Documentation** — *SVD Module.* https://eigen.tuxfamily.org/dox/group__SVD__Module.html
-
-### Procesamiento de Imágenes
-- **Digital Image Processing** — Gonzalez, R. C. & Woods, R. E.
-- **Singular Value Decomposition: Applications to Image Processing** — Compton, A. (2020). Lagrange College Undergraduate Research.
-- **SVD-Demo: Image Compression** — Baumann, T. https://timbaumann.info/svd-image-compression-demo/
-
-### Implementación y Herramientas
-- **Calculating SVD and PCA in C++** — DemoFox Blog (2022). https://blog.demofox.org/2022/07/12/calculating-svd-and-pca-in-c/
-- **stb Libraries** — https://github.com/nothings/stb (stb_image, stb_image_write)
-
-### Modelación Epidemiológica
-- **Mathematical Epidemiology** — Brauer, F. & Castillo-Chavez, C. (2012). Springer.
-- **SIR Models** — Keeling, M. J. & Rohani, P. (2008). Princeton University Press.
-- **Numerical Methods for ODEs** — Butcher, J. C. (2008). 2nd ed. Wiley.
-
-## Informes Tecnicos 
+## Informes Técnicos
 
 - **Consulta** - https://goryuzc.github.io/Computo-Cientifico/
 
