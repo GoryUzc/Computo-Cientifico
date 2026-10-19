@@ -14,6 +14,7 @@ Cada proyecto es autónomo: posee su propio `CMakeLists.txt`, puede compilarse d
 | 4 | `Taller4_PageRank` | PageRank - Método de las Potencias | Implementación del algoritmo PageRank mediante el método de potencias en C++17 con Eigen. Incluye 5 casos de prueba con matrices de transición hardcodeadas, construcción de la matriz de Google G = d·M + (1-d)/n·J, y visualización en Python (pandas, matplotlib, tabulate) generando tablas CSV/LaTeX y gráficos PNG. | ✅ Completado |
 | 5 | `taller_5_ModelacionEpidemeologica` | Modelación Epidemiológica - Simulación con EDOs | Implementación en **C++17** del modelo SIR+Epidemiológico con resolución numérica en tiempo real. Incluye visualización Python (matplotlib, pandas) con métricas clave de propagación de enfermedades. | ✅ Completado |
 | 6 | `Taller6_RedesBaseRadial` | Interpolación mediante Redes de Base Radial (RBF) | Interpolador RBF Gaussiano en C++17 con Eigen3. Genera datos con ruido, aplica regularización de Tikhonov y compara la aproximación para distintos parámetros ε. Incluye exportación CSV y visualización en Python. | ✅ Completado |
+| 7 | `Taller7_RedesNeuronales` | Red neuronal con Backpropagation | Implementación en C++17 de una red neuronal con una capa oculta para aproximar una función no lineal. Compara 15 experimentos con distintas tasas de aprendizaje e inicializaciones, y exporta historiales, predicciones y resultados para visualización en Python. | ✅ Completado |
 
 ## Cómo compilar cualquier proyecto
 
