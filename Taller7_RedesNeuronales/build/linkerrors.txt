@@ -1,0 +1,8 @@
+================================================================================
+Linker Errors
+Generated: 2026-10-19T00:07:57.116Z
+Total Errors: 1
+================================================================================
+
+[LNK1168] (MSVC)
+no se puede abrir C:\Users\User\OneDrive\Desktop\Ejercicios dev\Computo cientifico\ComputoCientifico\Taller7_RedesNeuronales\build\Debug\backprop_nn.exe para escritura [C:\Users\User\OneDrive\Desktop\Ejercicios dev\Computo cientifico\ComputoCientifico\Taller7_RedesNeuronales\build\backprop_nn.vcxproj]

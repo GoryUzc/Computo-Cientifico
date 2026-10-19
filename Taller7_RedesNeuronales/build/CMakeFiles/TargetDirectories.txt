@@ -1,0 +1,3 @@
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/Taller7_RedesNeuronales/build/CMakeFiles/backprop_nn.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/Taller7_RedesNeuronales/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/User/OneDrive/Desktop/Ejercicios dev/Computo cientifico/ComputoCientifico/Taller7_RedesNeuronales/build/CMakeFiles/ZERO_CHECK.dir
